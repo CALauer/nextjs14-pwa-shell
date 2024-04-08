@@ -1,24 +1,30 @@
 {
-  "name": "servicestash-crm",
+  "name": "enoch-next14-pwa",
+  "author": {
+    "name": "Chris Lauer",
+    "email": "lauer.chris1@gmail.com"
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next dev && workbox generateSW workbox-config.js",
+    "build": "next build && workbox generateSW workbox-config.js",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.1.4"
+    "sass": "^1.74.1"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.1.4"
+    "eslint-config-next": "14.1.4",
+    "typescript": "^5",
+    "workbox-cli": "^7.0.0"
   }
 }

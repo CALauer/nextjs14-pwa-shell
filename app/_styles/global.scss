@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+body {
+    background: rgba($color: #040404, $alpha: 1.0);
+}
+
+button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+section {
+    display: grid;
+    row-gap: .25rem;
+    &.dark {
+        padding: 1rem;
+        background-color: #000;
+        color: #fff;
+        a {
+            color: #fff;
+            color: rgb(148, 255, 148);
+        }
+        button {
+            color: white;
+            border: 1px solid rgba($color: #202020, $alpha: 1.0);
+            padding: .5rem 1rem;
+        }
+    }
+}
+
